@@ -20,6 +20,7 @@ import AjaxRegister from './api/ajaxRegister';
 import AjaxAccount from './api/ajaxAccount';
 import AjaxForgotPassword from './api/ajaxForgotPassword';
 import AjaxResetPassword from './api/ajaxResetPassword';
+import AjaxCookieBanner from './api/ajaxCookieBanner';
 import Orders from './api/orders/orders';
 import OrderDiscounts from './api/orders/discounts';
 import OrderTransactions from './api/orders/transactions';
@@ -105,6 +106,7 @@ export default class Client {
 		this.ajax.account = new AjaxAccount(ajaxClient);
 		this.ajax.forgotPassword = new AjaxForgotPassword(ajaxClient);
 		this.ajax.resetPassword = new AjaxResetPassword(ajaxClient);
+		this.ajax.cookieBanner = new AjaxCookieBanner(ajaxClient);
 		this.ajax.countries = new Countries(ajaxClient);
 		this.ajax.currencies = new Currencies(ajaxClient);
 		this.ajax.shippingMethods = new AjaxShippingMethods(ajaxClient);
